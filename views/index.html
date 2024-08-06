@@ -12,25 +12,29 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <h1 class="h1"> APPOINTMENT PAGE</h1>
-    <h6 class="h6"> Please fill the form below to book an appointment</h6>
+    <h1 class="h1">Appointment Page</h1>
+    <h6 class="h6">Please fill the form below to book an appointment</h6>
 
-    <form onsubmit="userDetail(event)">
+    <form onsubmit="userDetails(event)">
         <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Name</label>
-            <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="name" aria-describedby="nameHelp">
         </div>
         <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Number</label>
-          <input type="number" class="form-control" id="number">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+            <label for="number" class="form-label">Number</label>
+            <input type="number" class="form-control" id="number" name="number">
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
+    </form>
+
     <ul id="list"></ul>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.2.0/axios.min.js"></script>
-      <script src="/index.js"></script>
-    </body>
-    </html>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.4/axios.min.js"></script> <!-- Updated to a more recent version -->
+    <script src="/index.js"></script>
+</body>
+</html>
